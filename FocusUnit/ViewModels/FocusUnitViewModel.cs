@@ -33,6 +33,8 @@ namespace FocusUnit.ViewModels
         Priority _selectedPriority = Priority.Mittel;
         DateTime _dueDate = DateTime.Today;
         bool _isValid;
+        bool _isTitleValid;
+        bool _isDateValid;
 
         #endregion
 
@@ -65,6 +67,7 @@ namespace FocusUnit.ViewModels
             {
                 _dueDate = value;
                 OnPropertyChanged();
+                UpdateValidity();
             }
         }
 
@@ -80,6 +83,32 @@ namespace FocusUnit.ViewModels
         }
 
         public Array PriorityOptions { get; } = Enum.GetValues(typeof(Priority));
+
+        public bool IsTitleValid
+        {
+            get => _isTitleValid;
+            private set
+            {
+                if (_isTitleValid != value)
+                {
+                    _isTitleValid = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public bool IsDateValid
+        {
+            get => _isDateValid;
+            private set
+            {
+                if (_isDateValid != value)
+                {
+                    _isDateValid = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
         #endregion
 
         #region Events
@@ -99,7 +128,10 @@ namespace FocusUnit.ViewModels
 
         private void UpdateValidity()
         {
-            IsValid = !string.IsNullOrWhiteSpace(Title) && Title.Length >= 3 && DueDate >= DateTime.Today;
+            IsDateValid = DueDate >= DateTime.Today;
+            IsTitleValid = !string.IsNullOrWhiteSpace(Title) && Title.Length >= 3;
+            IsValid = IsTitleValid && IsDateValid;
+            
         }
 
         private void OnSave()
