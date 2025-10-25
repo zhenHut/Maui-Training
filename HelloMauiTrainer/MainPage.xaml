@@ -4,12 +4,11 @@
              x:Class="HelloMauiTrainer.MainPage">
 
     <VerticalStackLayout Padding="20"
-                         Spacing="15">
-        <Label Text="Wie heißt du?"
-               FontSize="20" />
-
-        <Entry x:Name="NameEntry"
-               Placeholder="Dein Name" />
+                         Spacing="16">
+        <Label Text="Gib deine Stadt ein:"
+               FontSize="18" />
+        <Entry x:Name="CityEntry"
+               Placeholder="z. B. Freiburg" />
         <Button Text="Weiter"
                 Clicked="OnNextClicked" />
     </VerticalStackLayout>

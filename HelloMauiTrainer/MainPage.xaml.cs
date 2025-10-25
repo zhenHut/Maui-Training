@@ -11,10 +11,11 @@
 
         private async void OnNextClicked(object sender, EventArgs e)
         {
-            string name = NameEntry.Text;
-            if (!string.IsNullOrWhiteSpace(name))
+            string city = CityEntry.Text;
+            var now = DateTime.Now;
+            if (!string.IsNullOrWhiteSpace(city))
             {
-                await Navigation.PushAsync(new WelcomePage(name));
+                await Navigation.PushAsync(new WelcomePage(city, now));
             }
         }
     }
