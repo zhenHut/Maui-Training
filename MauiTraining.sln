@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36616.10 d17.14
+VisualStudioVersion = 17.14.36616.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloMauiTrainer", "HelloMauiTrainer\HelloMauiTrainer.csproj", "{DEAF4AB8-F84C-4B14-B799-8588B0558FB6}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson02_FocusUnit", "Lesson02_FocusUnit", "{A385A841-B71A-4B33-94C8-466D3134223E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FocusUnit", "FocusUnit\FocusUnit.csproj", "{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskList", "Lesson03_TaskList\TaskList.csproj", "{A1098809-4EB9-4045-93F7-2C805FD87A65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson03_TaskList", "Lesson03_TaskList", "{22D9A844-EF6F-4D80-B742-3889FA285B6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,12 @@ Global
 		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A1098809-4EB9-4045-93F7-2C805FD87A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1098809-4EB9-4045-93F7-2C805FD87A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1098809-4EB9-4045-93F7-2C805FD87A65}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A1098809-4EB9-4045-93F7-2C805FD87A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1098809-4EB9-4045-93F7-2C805FD87A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1098809-4EB9-4045-93F7-2C805FD87A65}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DEAF4AB8-F84C-4B14-B799-8588B0558FB6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9} = {A385A841-B71A-4B33-94C8-466D3134223E}
+		{A1098809-4EB9-4045-93F7-2C805FD87A65} = {22D9A844-EF6F-4D80-B742-3889FA285B6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {618CC754-9DD2-453E-AA35-7F670538258C}

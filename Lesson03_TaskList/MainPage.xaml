@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Lesson03_TaskList"
+             x:Class="Lesson03_TaskList.MainPage"
+             Title="Task List">
+    <ScrollView>
+        
+    <VerticalStackLayout Padding="20"
+                         Spacing="10">
+
+        <Entry Placeholder="Neue Aufgabe"
+               Text="{Binding NewTitle}"
+               BackgroundColor="#222"
+               TextColor="White"
+               PlaceholderColor="#777" 
+               ReturnType="Done"
+               ReturnCommand="{Binding AddCommand}"/>
+
+        <Picker Title="Priorität"
+                SelectedItem="{Binding NewPriority}">
+            <Picker.Items>
+
+                <x:String>Niedrig</x:String>
+                <x:String>Mittel</x:String>
+                <x:String>Hoch</x:String>
+            </Picker.Items>
+
+        </Picker>
+
+        <Button Text="➕ Hinzufügen"
+                Command="{Binding AddCommand}"
+                BackgroundColor="#4ADE80"
+                TextColor="Black"
+                CornerRadius="10" />
+
+        <CollectionView ItemsSource="{Binding Tasks}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,5"
+                           BorderColor="#333"
+                           CornerRadius="10"
+                           Padding="10"
+                           HasShadow="True">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout Grid.Column="0">
+                                <Label Text="{Binding Title}"
+                                       FontSize="18"
+                                       TextColor="white" />
+                                <Label Text="{Binding Priority}"
+                                       FontSize="12"
+                                       TextColor="#AAA" />
+                            </VerticalStackLayout>
+
+                            <Button  Grid.Column="1"
+                                     Text="🗑"
+                                     Command="{Binding Source={RelativeSource AncestorType={x:Type local:MainPage}}, Path=BindingContext.DeleteCommand}"
+                                     CommandParameter="{Binding .}"
+                                     BackgroundColor="#DC2626"
+                                     TextColor="White"
+                                     WidthRequest="40"
+                                     HeightRequest="40"
+                                     CornerRadius="20"
+                                     
+                                     />
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+    </VerticalStackLayout>
+
+
+    </ScrollView>
+</ContentPage>
