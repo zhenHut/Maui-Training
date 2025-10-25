@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloMauiTrainer", "HelloMa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson01_HelloCity", "Lesson01_HelloCity", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson02_FocusUnit", "Lesson02_FocusUnit", "{A385A841-B71A-4B33-94C8-466D3134223E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FocusUnit", "FocusUnit\FocusUnit.csproj", "{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +23,19 @@ Global
 		{DEAF4AB8-F84C-4B14-B799-8588B0558FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEAF4AB8-F84C-4B14-B799-8588B0558FB6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DEAF4AB8-F84C-4B14-B799-8588B0558FB6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DEAF4AB8-F84C-4B14-B799-8588B0558FB6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5A494F08-C0E0-4CFE-9E59-1CEAFE2F9BB9} = {A385A841-B71A-4B33-94C8-466D3134223E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {618CC754-9DD2-453E-AA35-7F670538258C}
